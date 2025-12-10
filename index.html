@@ -1,199 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>picks and addy COMICS!!!!!@</title>
-
-  <!-- XP.css for Windows XP look -->
-  <link rel="stylesheet" href="https://unpkg.com/xp.css">
-
-  <!-- Skinny Pixel Font -->
-  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CR9QE2X88K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-CR9QE2X88K');
-</script>
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pickdel Art & Games</title>
   <style>
-  body {
-  background-image: url("thumbnails/background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  font-family: 'Press Start 2P', Tahoma, sans-serif;
-  text-align: center;
-  margin: 0;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-html {
-  height: auto;
-  min-height: 100vh;
-}
-    header {
-      background-color: #2e4f8f;
-      padding: 20px;
-      text-align: center;
-    }
-
-    header h1 {
+    body {
+      background-image: url('your-background.jpg'); /* Replace with your background */
+      background-size: cover;
+      background-repeat: repeat;
+      font-family: 'Comic Sans MS', Arial, sans-serif;
+      color: #ffffff;
+      text-shadow: 2px 2px #000;
       margin: 0;
-      color: white;
-      font-size: 24px;
+      padding: 20px;
     }
 
-    .button-container {
-      text-align: left;
-      margin: 10px 0;
-      padding-left: 20px;
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border: 3px solid #00ffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffff;
     }
 
-    .button-container button {
-      background-color: white;
-      color: #0033cc;
-      border: 2px solid #2e4f8f;
-      padding: 10px 20px;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 8px;
-      transition: transform 0.2s, background-color 0.2s, color 0.2s;
-    }
-
-    .button-container button:hover {
-      background-color: #2e4f8f;
-      color: white;
-      transform: scale(1.05);
-    }
-
-    .main-content {
-      display: flex;
-      margin-top: 20px;
-    }
-
-    .info {
-      width: 35%;
-      background-color: #f0f0f0;
-      padding: 15px;
-      border: 2px solid #2e4f8f;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .comics-list {
-      width: 60%;
-      margin-left: 20px;
-      overflow-y: auto;
-    }
-
-    .comic-window {
-      margin: 10px 0;
-      display: flex;
-      background-color: white;
-      padding: 10px;
-      border: 2px solid #2e4f8f;
-      align-items: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    .comic-window img {
-      width: 200px;
-      height: auto;
-      border: 2px solid #2e4f8f;
-      margin-right: 10px;
-    }
-
-    .comic-caption {
-      color: #2e4f8f;
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    .info h2 {
-      color: #2e4f8f;
-      font-size: 20px;
-    }
-
-    .info p {
-      color: #2e4f8f;
-      font-size: 14px;
+    h1 {
+      font-size: 48px;
       text-align: center;
+      color: #ff00ff;
     }
 
-    .info img {
-      width: 80%;
-      max-width: 300px;
-      height: auto;
-      border: 2px solid #2e4f8f;
+    .blink {
+      animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    .image-box {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    img {
+      max-width: 80%;
+      border: 4px ridge #ff00ff;
+    }
+  .retro-title {
+      font-size: 64px;
+      text-align: center;
+      color: #ffdd00;
+      text-shadow:
+        2px 2px #000,
+        4px 4px #000,
+        6px 6px #000;
+      letter-spacing: 2px;
+      image-rendering: pixelated;
+      filter: contrast(200%) brightness(120%);
+    }
+
+    .youtube-link {
+      display: block;
+      text-align: center;
       margin-top: 20px;
-      margin-bottom: 10px;
+      font-size: 24px;
+      color: #00ffff;
+      text-decoration: none;
+      text-shadow: 2px 2px #000;
+    }
+    .youtube-link:hover {
+      color: #ff00ff;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1 class="retro-title">Pickdel Art & Games</h1>
 
-  <header>
-    <h1>PICK AND ADDS COMICS</h1>
-  </header>
+    <p>
+      Welcome i make art and video games for FUN!!!
+    </p>
 
-  <div class="button-container">
-    <button onclick="window.location.href='characters.html'">Units stats</button>
-  </div>
-
-  <div class="main-content">
-    <div class="info">
-      <h2>about the site</h2>
-      <p>i make comics and post em so hope you enjoy em. we also plan to do more with this site sooo check on us every often.</p>
-      <video width="100%" controls>
-  <source src="stuff/there webcomic (1).mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-      <p>have a blessed day and check out my youtube PICKDEL_de_GEEK <3</p>
+    <div class="image-box">
+      <img src="your-image.png" alt="Cool Retro Image" />
     </div>
 
-    <div class="comics-list" id="comicList"></div>
+    <p>
+      Thats all for now
+    </p>
+      <a class="youtube-link" href=https://www.youtube.com/@TINKERER3D" target="_blank">Visit My YouTube Channel!</a>
   </div>
-
-  <script>
-    const comics = [
-      { image: "thumbnails/Cover1.png", text: "pomegranate and potato", link: "comic1.html" },
-      { image: "thumbnails/comic.png", text: "wip", link: "comic2.html" },
-      { image: "thumbnails/comic3.png", text: "wip", link: "comic3.html" }
-    ];
-
-    const comicList = document.getElementById("comicList");
-
-    comics.forEach(comic => {
-      const cw = document.createElement("div");
-      cw.className = "comic-window";
-
-      const a = document.createElement("a");
-      a.href = comic.link;
-
-      const img = document.createElement("img");
-      img.src = comic.image;
-      img.alt = comic.text;
-
-      const cap = document.createElement("p");
-      cap.className = "comic-caption";
-      cap.textContent = comic.text;
-
-      a.appendChild(img);
-      cw.appendChild(a);
-      cw.appendChild(cap);
-      comicList.appendChild(cw);
-    });
-  </script>
-
 </body>
 </html>

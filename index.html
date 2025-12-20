@@ -88,37 +88,52 @@ body::after {
   text-align: center;
 }
 
-/* ===== GAME CARD ===== */
+/* ===== GAME CARD (CARTRIDGE STYLE) ===== */
 .game-card {
-  background: #222;
-  border: 4px ridge #ffcc00;
-  padding: 10px;
-  margin: 16px 0;
+  background: linear-gradient(to bottom, #222, #000);
+  border: 4px ridge #ff00ff;
+  padding: 12px;
+  margin: 20px 0;
   text-align: center;
-  box-shadow: 0 0 8px #00ff00;
+  box-shadow: 0 0 12px #ff00ff, inset 0 0 6px #550055;
   width: 100%;
-  max-width: 360px;
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 12px;
-  overflow: hidden;
-  font-family: "Comic Sans MS", Arial, sans-serif;
+  border-radius: 8px;
 }
 
-/* ===== GAME CARD IMAGE SLOT ===== */
+/* Thumbnail image inside cartridge */
 .game-card img {
   width: 100%;
-  height: 180px;
+  height: 160px;
   object-fit: cover;
-  border-bottom: 3px ridge #00ffff;
+  border: 3px inset #00ff00;
+  margin-bottom: 8px;
   background: #000;
 }
 
-/* ===== BUTTON ===== */
+/* Game title inside card */
+.game-card h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #00ff00;
+  text-shadow: 1px 1px #000;
+}
+
+/* Game description */
+.game-card p {
+  font-size: 14px;
+  margin: 6px 0;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+}
+
+/* Button */
 .pixel-button {
   display: inline-block;
   margin-top: 10px;
-  padding: 10px 18px;
+  padding: 8px 14px;
   background: #ff00ff;
   color: #000;
   font-weight: bold;
@@ -129,7 +144,7 @@ body::after {
   background: #00ffff;
 }
 
-/* ===== FOOTER ===== */
+/* Footer */
 .footer {
   margin-top: 30px;
   font-size: 14px;
@@ -163,7 +178,7 @@ body::after {
 
   <!-- Game card with image slot -->
   <div class="game-card tilt">
-    <img src="Assets/BobWorldThumbnail.png" alt="Bob World Thumbnail">
+    <img src="Assets/bobworld_thumb.png" alt="Bob World Thumbnail">
     <h3>Bob World</h3>
     <p>A game being made by comments</p>
     <a href="BobWorld/index.html" class="pixel-button" target="_blank">PLAY</a>

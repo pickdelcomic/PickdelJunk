@@ -4,9 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pickdel Art & Games</title>
+
   <style>
     body {
-      background-image: url('https://www.techspot.com/images2/news/bigimage/2016/10/2016-10-28-image.gif'); /* Replace with your background */
+      background-image: url('https://www.techspot.com/images2/news/bigimage/2016/10/2016-10-28-image.gif');
       background-size: cover;
       background-repeat: repeat;
       font-family: 'Comic Sans MS', Arial, sans-serif;
@@ -26,18 +27,21 @@
       box-shadow: 0 0 10px #00ffff;
     }
 
-    h1 {
-      font-size: 48px;
+    .retro-title {
+      font-size: 64px;
       text-align: center;
-      color: #ff00ff;
+      color: #ffdd00;
+      text-shadow:
+        2px 2px #000,
+        4px 4px #000,
+        6px 6px #000;
+      letter-spacing: 2px;
     }
 
-    .blink {
-      animation: blink 1s step-start infinite;
-    }
-
-    @keyframes blink {
-      50% { opacity: 0; }
+    p {
+      font-size: 20px;
+      line-height: 1.4;
+      text-align: center;
     }
 
     .image-box {
@@ -49,18 +53,6 @@
       max-width: 80%;
       border: 4px ridge #ff00ff;
     }
-  .retro-title {
-      font-size: 64px;
-      text-align: center;
-      color: #ffdd00;
-      text-shadow:
-        2px 2px #000,
-        4px 4px #000,
-        6px 6px #000;
-      letter-spacing: 2px;
-      image-rendering: pixelated;
-      filter: contrast(200%) brightness(120%);
-    }
 
     .youtube-link {
       display: block;
@@ -69,31 +61,35 @@
       font-size: 24px;
       color: #00ffff;
       text-decoration: none;
-      text-shadow: 2px 2px #000;
     }
+
     .youtube-link:hover {
       color: #ff00ff;
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <h1 class="retro-title">Pickdel Art & Games</h1>
 
-    <p>
-      Welcome i make art and video games for FUN!!!
-    </p>
+    <p>Welcome! I make art and video games for FUN!!!</p>
 
     <div class="image-box">
-      <img src="/Assets/silly.png" alt="yippe" />
+      <!-- FIXED IMAGE PATH -->
+      <img src="Assets/silly.png" alt="yippe" />
     </div>
 
-    <p>
-      Vist https://www.youtube.com/@TINKERER3D
+    <h2 style="text-align:center;">🎮 My Games</h2>
+    <p>More games coming soon…</p>
+
+    <a
+      class="youtube-link"
+      href="https://www.youtube.com/@TINKERER3D"
+      target="_blank"
+    >
+      Visit my YouTube Channel
+    </a>
   </div>
 </body>
 </html>
-
-
-
-
